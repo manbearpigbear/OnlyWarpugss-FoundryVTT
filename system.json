@@ -1,7 +1,7 @@
 {
   "id": "dark-heresy",
-  "title": "Dark Heresy 2E",
-  "description": "Unofficial Foundry VTT System for Dark Heresy 2nd Edition.",
+  "title": "Only War 2E",
+  "description": "Unofficial Foundry VTT System for Only War 2nd Edition.",
   "version": "4.3.2.1",
   "minimumCoreVersion" : 11,
   "compatibility" : {
@@ -23,7 +23,8 @@
     { "name":"Silver292" },
     { "name":"Giddy" },
     { "name":"Dazzerix" },
-	{ "name":"FilippoPolo" }
+	{ "name":"FilippoPolo" },
+    { "name":"manbearpigbear"}
   ],
   "scripts": [],
   "esmodules": [
@@ -67,9 +68,9 @@
   "gridUnits": "m",
   "primaryTokenAttribute": null,
   "secondaryTokenAttribute": null,
-  "url": "https://github.com/Vendare/DarkHeresy2E-FoundryVTT",
+  "url": "https://github.com/manbearpigbear/DarkHeresy2E-FoundryVTT",
   "socket": true,
-  "manifest": "https://github.com/Vendare/DarkHeresy2E-FoundryVTT/releases/download/4.3.2.1/system.json",
-  "download": "https://github.com/Vendare/DarkHeresy2E-FoundryVTT/releases/download/4.3.2.1/dark-heresy.zip",
+  "manifest": "https://github.com/manbearpigbear/OnlyWarpugss-FoundryVTT/releases/download/4.3.2.1/system.json",
+  "download": "https://github.com/manbearpigbear/OnlyWarpugss-FoundryVTT/releases/download/4.3.2.1/dark-heresy.zip",
   "license": "LICENSE.txt"
 }
