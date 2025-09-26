@@ -3,8 +3,8 @@ import { DarkHeresyItemSheet } from "./item.js";
 export class TalentSheet extends DarkHeresyItemSheet {
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-            classes: ["dark-heresy", "sheet", "talent"],
-            template: "systems/dark-heresy/template/sheet/talent.hbs",
+            classes: ["only-war", "sheet", "talent"],
+            template: "systems/only-war/template/sheet/talent.hbs",
             width: 500,
             height: 369,
             resizable: false,

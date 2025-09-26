@@ -12,11 +12,11 @@
                     </div>
                     <div class="header-row">
                         <div class="home-world">
-                            <label>{{localize "BIO.HOME_WORLD"}}</label>
+                            <label>{{localize "BIO.HOME_WORLD"}}</label><br>
                             <input name="system.bio.homeWorld" type="text" value="{{system.bio.homeWorld}}" />
                         </div>
                         <div class="role">
-                            <label>{{localize "BIO.ROLE"}}</label>
+                            <label>{{localize "BIO.ROLE"}}</label><br>
                             <input style="margin-left: 8px" name="system.bio.role" type="text" value="{{system.bio.role}}" />
                         </div>
                         <div class="fate">
@@ -28,11 +28,11 @@
                     </div>
                     <div class="header-row">
                         <div class="background">
-                            <label>{{localize "BIO.BACKGROUND"}}</label>
+                            <label>{{localize "BIO.BACKGROUND"}}</label><br>
                             <input style="margin-left: 18px" name="system.bio.background" type="text" value="{{system.bio.background}}" />
                         </div>
                         <div class="elite">
-                            <label>{{localize "BIO.ELITE"}}</label>
+                            <label>{{localize "BIO.ELITE"}}</label><br>
                             <input name="system.bio.elite" type="text" value="{{system.bio.elite}}" />
                         </div>
                         <div class="fatigue">
@@ -58,25 +58,25 @@
 
         <div class="sheet-body">
             <div class="tab" data-group="primary" data-tab="stats">
-                {{> systems/dark-heresy/template/sheet/actor/tab/stats.hbs}}
+                {{> systems/only-war/template/sheet/actor/tab/stats.hbs}}
             </div>
             <div class="tab" data-group="primary" data-tab="combat">
-                {{> systems/dark-heresy/template/sheet/actor/tab/combat.hbs}}
+                {{> systems/only-war/template/sheet/actor/tab/combat.hbs}}
             </div>
             <div class="tab" data-group="primary" data-tab="abilities">
-                {{> systems/dark-heresy/template/sheet/actor/tab/abilities.hbs}}
+                {{> systems/only-war/template/sheet/actor/tab/abilities.hbs}}
             </div>
             <div class="tab" data-group="primary" data-tab="psychic-powers">
-                {{> systems/dark-heresy/template/sheet/actor/tab/psychic-powers.hbs}}
+                {{> systems/only-war/template/sheet/actor/tab/psychic-powers.hbs}}
             </div>
             <div class="tab" data-group="primary" data-tab="gear">
-                {{> systems/dark-heresy/template/sheet/actor/tab/gear.hbs}}
+                {{> systems/only-war/template/sheet/actor/tab/gear.hbs}}
             </div>
             <div class="tab" data-group="primary" data-tab="progression">
-                {{> systems/dark-heresy/template/sheet/actor/tab/progression.hbs}}
+                {{> systems/only-war/template/sheet/actor/tab/progression.hbs}}
             </div>
             <div class="tab" data-group="primary" data-tab="notes">
-                {{> systems/dark-heresy/template/sheet/actor/tab/notes.hbs}}
+                {{> systems/only-war/template/sheet/actor/tab/notes.hbs}}
             </div>
         </div>
     </div>

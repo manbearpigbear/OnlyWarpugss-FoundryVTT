@@ -3,8 +3,8 @@ import { DarkHeresyItemSheet } from "./item.js";
 export class CyberneticSheet extends DarkHeresyItemSheet {
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-            classes: ["dark-heresy", "sheet", "cybernetic"],
-            template: "systems/dark-heresy/template/sheet/cybernetic.hbs",
+            classes: ["only-war", "sheet", "cybernetic"],
+            template: "systems/only-war/template/sheet/cybernetic.hbs",
             width: 500,
             height: 369,
             resizable: false,

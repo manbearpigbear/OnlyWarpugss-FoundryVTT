@@ -1,5 +1,5 @@
 {
-  "id": "dark-heresy",
+  "id": "only-war",
   "title": "Only War 2E",
   "description": "Unofficial Foundry VTT System for Only War 2nd Edition.",
   "version": "4.3.2.1",
@@ -28,16 +28,16 @@
   ],
   "scripts": [],
   "esmodules": [
-    "script/dark-heresy.js"
+    "script/only-war.js"
   ],
   "styles": [
-    "css/dark-heresy.css"
+    "css/only-war.css"
   ],
   "packs": [
     {
       "name": "character-aptitudes",
       "label": "Character Aptitudes",
-      "system": "dark-heresy",
+      "system": "only-war",
       "path": "./packs/aptitudes.db",
       "type": "Item"
     }
@@ -71,6 +71,6 @@
   "url": "https://github.com/manbearpigbear/DarkHeresy2E-FoundryVTT",
   "socket": true,
   "manifest": "https://github.com/manbearpigbear/OnlyWarpugss-FoundryVTT/releases/download/4.3.2.1/system.json",
-  "download": "https://github.com/manbearpigbear/OnlyWarpugss-FoundryVTT/releases/download/4.3.2.1/dark-heresy.zip",
+  "download": "https://github.com/manbearpigbear/OnlyWarpugss-FoundryVTT/releases/download/4.3.2.1/only-war.zip",
   "license": "LICENSE.txt"
 }

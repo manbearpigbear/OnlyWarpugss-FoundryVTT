@@ -3,8 +3,8 @@ import { DarkHeresyItemSheet } from "./item.js";
 export class GearSheet extends DarkHeresyItemSheet {
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-            classes: ["dark-heresy", "sheet", "gear"],
-            template: "systems/dark-heresy/template/sheet/gear.hbs",
+            classes: ["only-war", "sheet", "gear"],
+            template: "systems/only-war/template/sheet/gear.hbs",
             width: 500,
             height: 369,
             resizable: false,

@@ -3,8 +3,8 @@ import { DarkHeresyItemSheet } from "./item.js";
 export class MentalDisorderSheet extends DarkHeresyItemSheet {
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-            classes: ["dark-heresy", "sheet", "mental-disorder"],
-            template: "systems/dark-heresy/template/sheet/mental-disorder.hbs",
+            classes: ["only-war", "sheet", "mental-disorder"],
+            template: "systems/only-war/template/sheet/mental-disorder.hbs",
             width: 500,
             height: 369,
             resizable: false,

@@ -3,8 +3,8 @@ import { DarkHeresyItemSheet } from "./item.js";
 export class CriticalInjurySheet extends DarkHeresyItemSheet {
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-            classes: ["dark-heresy", "sheet", "critical-injury"],
-            template: "systems/dark-heresy/template/sheet/critical-injury.hbs",
+            classes: ["only-war", "sheet", "critical-injury"],
+            template: "systems/only-war/template/sheet/critical-injury.hbs",
             width: 500,
             height: 369,
             resizable: false,

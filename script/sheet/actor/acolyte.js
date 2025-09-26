@@ -4,8 +4,8 @@ export class AcolyteSheet extends DarkHeresySheet {
 
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-            classes: ["dark-heresy", "sheet", "actor"],
-            template: "systems/dark-heresy/template/sheet/actor/acolyte.hbs",
+            classes: ["only-war", "sheet", "actor"],
+            template: "systems/only-war/template/sheet/actor/acolyte.hbs",
             width: 700,
             height: 881,
             resizable: false,

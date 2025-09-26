@@ -17,7 +17,6 @@ The project is being continued under the GPL-3.0 License after the original auth
 
 ## Related Website
 - https://foundryvtt.com/
-- https://www.drivethrurpg.com/browse/pub/54/Cubicle-7-Entertainment-Ltd/subcategory/179_21610/Dark-Heresy-Second-Edition
 
 ## Licence
 [GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/)

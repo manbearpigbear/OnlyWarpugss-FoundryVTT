@@ -185,7 +185,7 @@ export class DarkHeresyActor extends Actor {
     }
 
     _computeExperience() {
-        if (game.settings.get("dark-heresy", "autoCalcXPCosts")) this._computeExperience_auto();
+        if (game.settings.get("only-war", "autoCalcXPCosts")) this._computeExperience_auto();
         else this._computeExperience_normal();
     }
 
@@ -514,7 +514,7 @@ export class DarkHeresyActor extends Actor {
      */
     async _showCritMessage(rolls, target, totalWounds, totalCritWounds) {
         if (rolls.length === 0) return;
-        const html = await renderTemplate("systems/dark-heresy/template/chat/critical.hbs", {
+        const html = await renderTemplate("systems/only-war/template/chat/critical.hbs", {
             rolls,
             target,
             totalWounds,
@@ -546,6 +546,8 @@ export class DarkHeresyActor extends Actor {
     get psy() { return this.system.psy; }
 
     get bio() { return this.system.bio; }
+
+    get comrade() { return this.system.comrade; }
 
     get experience() { return this.system.experience; }
 

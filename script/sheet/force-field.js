@@ -3,8 +3,8 @@ import { DarkHeresyItemSheet } from "./item.js";
 export class ForceFieldSheet extends DarkHeresyItemSheet {
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-            classes: ["dark-heresy", "sheet", "force-field"],
-            template: "systems/dark-heresy/template/sheet/force-field.hbs",
+            classes: ["only-war", "sheet", "force-field"],
+            template: "systems/only-war/template/sheet/force-field.hbs",
             width: 500,
             height: 369,
             resizable: false,

@@ -50,31 +50,31 @@ Hooks.once("init", function() {
     };
     game.macro = DhMacroUtil;
     Actors.unregisterSheet("core", ActorSheet);
-    Actors.registerSheet("dark-heresy", AcolyteSheet, { types: ["acolyte"], makeDefault: true });
-    Actors.registerSheet("dark-heresy", NpcSheet, { types: ["npc"], makeDefault: true });
+    Actors.registerSheet("only-war", AcolyteSheet, { types: ["acolyte"], makeDefault: true });
+    Actors.registerSheet("only-war", NpcSheet, { types: ["npc"], makeDefault: true });
     Items.unregisterSheet("core", ItemSheet);
-    Items.registerSheet("dark-heresy", WeaponSheet, { types: ["weapon"], makeDefault: true });
-    Items.registerSheet("dark-heresy", AmmunitionSheet, { types: ["ammunition"], makeDefault: true });
-    Items.registerSheet("dark-heresy", WeaponModificationSheet, { types: ["weaponModification"], makeDefault: true });
-    Items.registerSheet("dark-heresy", ArmourSheet, { types: ["armour"], makeDefault: true });
-    Items.registerSheet("dark-heresy", ForceFieldSheet, { types: ["forceField"], makeDefault: true });
-    Items.registerSheet("dark-heresy", CyberneticSheet, { types: ["cybernetic"], makeDefault: true });
-    Items.registerSheet("dark-heresy", DrugSheet, { types: ["drug"], makeDefault: true });
-    Items.registerSheet("dark-heresy", GearSheet, { types: ["gear"], makeDefault: true });
-    Items.registerSheet("dark-heresy", ToolSheet, { types: ["tool"], makeDefault: true });
-    Items.registerSheet("dark-heresy", CriticalInjurySheet, { types: ["criticalInjury"], makeDefault: true });
-    Items.registerSheet("dark-heresy", MalignancySheet, { types: ["malignancy"], makeDefault: true });
-    Items.registerSheet("dark-heresy", MentalDisorderSheet, { types: ["mentalDisorder"], makeDefault: true });
-    Items.registerSheet("dark-heresy", MutationSheet, { types: ["mutation"], makeDefault: true });
-    Items.registerSheet("dark-heresy", PsychicPowerSheet, { types: ["psychicPower"], makeDefault: true });
-    Items.registerSheet("dark-heresy", TalentSheet, { types: ["talent"], makeDefault: true });
-    Items.registerSheet("dark-heresy", SpecialAbilitySheet, { types: ["specialAbility"], makeDefault: true });
-    Items.registerSheet("dark-heresy", TraitSheet, { types: ["trait"], makeDefault: true });
-    Items.registerSheet("dark-heresy", AptitudeSheet, { types: ["aptitude"], makeDefault: true });
+    Items.registerSheet("only-war", WeaponSheet, { types: ["weapon"], makeDefault: true });
+    Items.registerSheet("only-war", AmmunitionSheet, { types: ["ammunition"], makeDefault: true });
+    Items.registerSheet("only-war", WeaponModificationSheet, { types: ["weaponModification"], makeDefault: true });
+    Items.registerSheet("only-war", ArmourSheet, { types: ["armour"], makeDefault: true });
+    Items.registerSheet("only-war", ForceFieldSheet, { types: ["forceField"], makeDefault: true });
+    Items.registerSheet("only-war", CyberneticSheet, { types: ["cybernetic"], makeDefault: true });
+    Items.registerSheet("only-war", DrugSheet, { types: ["drug"], makeDefault: true });
+    Items.registerSheet("only-war", GearSheet, { types: ["gear"], makeDefault: true });
+    Items.registerSheet("only-war", ToolSheet, { types: ["tool"], makeDefault: true });
+    Items.registerSheet("only-war", CriticalInjurySheet, { types: ["criticalInjury"], makeDefault: true });
+    Items.registerSheet("only-war", MalignancySheet, { types: ["malignancy"], makeDefault: true });
+    Items.registerSheet("only-war", MentalDisorderSheet, { types: ["mentalDisorder"], makeDefault: true });
+    Items.registerSheet("only-war", MutationSheet, { types: ["mutation"], makeDefault: true });
+    Items.registerSheet("only-war", PsychicPowerSheet, { types: ["psychicPower"], makeDefault: true });
+    Items.registerSheet("only-war", TalentSheet, { types: ["talent"], makeDefault: true });
+    Items.registerSheet("only-war", SpecialAbilitySheet, { types: ["specialAbility"], makeDefault: true });
+    Items.registerSheet("only-war", TraitSheet, { types: ["trait"], makeDefault: true });
+    Items.registerSheet("only-war", AptitudeSheet, { types: ["aptitude"], makeDefault: true });
 
     initializeHandlebars();
 
-    game.settings.register("dark-heresy", "worldSchemaVersion", {
+    game.settings.register("only-war", "worldSchemaVersion", {
         name: "World Version",
         hint: "Used to automatically upgrade worlds data when the system is upgraded.",
         scope: "world",
@@ -82,7 +82,7 @@ Hooks.once("init", function() {
         default: 0,
         type: Number
     });
-    game.settings.register("dark-heresy", "autoCalcXPCosts", {
+    game.settings.register("only-war", "autoCalcXPCosts", {
         name: "Calculate XP Costs",
         hint: "If enabled, calculate XP costs automatically.",
         scope: "world",
@@ -90,7 +90,7 @@ Hooks.once("init", function() {
         default: false,
         type: Boolean
     });
-    game.settings.register("dark-heresy", "useSpraytemplate", {
+    game.settings.register("only-war", "useSpraytemplate", {
         name: "Use Template with Spray Weapons",
         hint: "If enabled, Spray Weapons will require the user to put down a template before the roll is made. Templates are NOT removed automatically",
         scope: "client",
@@ -104,7 +104,7 @@ Hooks.once("init", function() {
 Hooks.once("ready", function() {
     migrateWorld();
     CONFIG.ChatMessage.documentClass.prototype.getRollData = function() {
-        return this.getFlag("dark-heresy", "rollData");
+        return this.getFlag("only-war", "rollData");
     };
 });
 
@@ -134,6 +134,6 @@ Hooks.on("hotbarDrop", (bar, data, slot) => {
 });
 
 Hooks.on("renderDarkHeresySheet", (sheet, html, data) => {
-    html.find("input.cost").prop("disabled", game.settings.get("dark-heresy", "autoCalcXPCosts"));
-    html.find(":not(.psychic-power) > input.item-cost").prop("disabled", game.settings.get("dark-heresy", "autoCalcXPCosts"));
+    html.find("input.cost").prop("disabled", game.settings.get("only-war", "autoCalcXPCosts"));
+    html.find(":not(.psychic-power) > input.item-cost").prop("disabled", game.settings.get("only-war", "autoCalcXPCosts"));
 });
